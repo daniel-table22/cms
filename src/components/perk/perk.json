@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_perk_perks",
+  "info": {
+    "displayName": "perk"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

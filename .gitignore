@@ -11,6 +11,14 @@ Icon
 ._*
 
 
+.cache
+.tmp
+node_modules
+dist
+build
+.env
+
+
 ############################
 # Linux
 ############################

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_review_reviews",
+  "info": {
+    "displayName": "review",
+    "icon": "heart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "default": "2025-05-08"
+    },
+    "city": {
+      "type": "string",
+      "default": "San Francisco"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

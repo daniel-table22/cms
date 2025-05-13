@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "businesses",
+  "info": {
+    "singularName": "business",
+    "pluralName": "businesses",
+    "displayName": "business",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "businessType": {
+      "type": "enumeration",
+      "enum": [
+        "restaurant",
+        "wine",
+        "shop"
+      ]
+    },
+    "heroRestaurantName": {
+      "type": "string"
+    },
+    "heroMembershipName": {
+      "type": "string"
+    },
+    "whatYouGetTitle": {
+      "type": "string"
+    },
+    "whatYouGetDescription": {
+      "type": "text"
+    },
+    "supportingDescription": {
+      "type": "text"
+    },
+    "supportingMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "perks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perk.perk"
+    },
+    "reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "review.review"
+    },
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu"
+    },
+    "heroSlogan": {
+      "type": "blocks"
+    },
+    "heroCarousel": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Mainoffer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variant.variant"
+    },
+    "delivery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "variant.variant"
+    },
+    "Variantgroup": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variantgroups.variant-groups"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

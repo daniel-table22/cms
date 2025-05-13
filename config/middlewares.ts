@@ -2,7 +2,13 @@ export default [
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['http://localhost:3000'], // or your V0 preview URL
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',

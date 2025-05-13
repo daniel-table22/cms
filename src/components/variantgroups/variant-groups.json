@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_variantgroups_variant_groups",
+  "info": {
+    "displayName": "Variant groups"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variant.variant"
+    }
+  }
+}

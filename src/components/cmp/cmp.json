@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_cmp_cmps",
+  "info": {
+    "displayName": "cmp",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "tile": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
