@@ -5,7 +5,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000'], // or your V0 preview URL
+      origin: ['http://localhost:3000', 'http://localhost:5173'], // Added localhost:5173
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
     },
   },

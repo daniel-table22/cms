@@ -7,19 +7,15 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "default": "variant tiile"
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "default": "variant description"
     },
-    "image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
+    "price": {
+      "type": "string"
     }
   }
 }

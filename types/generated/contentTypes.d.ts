@@ -377,7 +377,7 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
   collectionName: 'businesses';
   info: {
     description: '';
-    displayName: 'business';
+    displayName: 'partner';
     pluralName: 'businesses';
     singularName: 'business';
   };
@@ -389,33 +389,37 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    delivery: Schema.Attribute.Component<'variant.variant', false>;
-    description: Schema.Attribute.Blocks;
+    delivery: Schema.Attribute.Component<'delivery-type.delivery-type', true>;
     heroCarousel: Schema.Attribute.Media<'images' | 'files' | 'videos', true>;
     heroMembershipName: Schema.Attribute.String;
     heroRestaurantName: Schema.Attribute.String;
-    heroSlogan: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::business.business'
     > &
       Schema.Attribute.Private;
-    Mainoffer: Schema.Attribute.Component<'variant.variant', true>;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    membershipDate: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'May 25th'>;
+    membershipPrice: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'$129'>;
     menus: Schema.Attribute.Component<'menu.menu', true>;
+    offeringType: Schema.Attribute.Component<'variant.variant', true>;
     perks: Schema.Attribute.Component<'perk.perk', true>;
     publishedAt: Schema.Attribute.DateTime;
     reviews: Schema.Attribute.Component<'review.review', true>;
+    supportingChefname: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Chef Jones'>;
     supportingDescription: Schema.Attribute.Text;
     supportingMedia: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
-    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Variantgroup: Schema.Attribute.Component<
+    variantGroup: Schema.Attribute.Component<
       'variantgroups.variant-groups',
       true
     >;

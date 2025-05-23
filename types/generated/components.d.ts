@@ -13,13 +13,25 @@ export interface CmpCmp extends Struct.ComponentSchema {
   };
 }
 
+export interface DeliveryTypeDeliveryType extends Struct.ComponentSchema {
+  collectionName: 'components_delivery_type_delivery_types';
+  info: {
+    displayName: 'deliveryType';
+    icon: 'car';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['Pickup', 'Delivery']>;
+  };
+}
+
 export interface MenuMenu extends Struct.ComponentSchema {
   collectionName: 'components_menu_menus';
   info: {
+    description: '';
     displayName: 'menu';
   };
   attributes: {
-    date: Schema.Attribute.Date;
     description: Schema.Attribute.Blocks;
     image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
@@ -32,9 +44,11 @@ export interface MenuMenu extends Struct.ComponentSchema {
 export interface PerkPerk extends Struct.ComponentSchema {
   collectionName: 'components_perk_perks';
   info: {
+    description: '';
     displayName: 'perk';
   };
   attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String;
   };
 }
@@ -60,18 +74,24 @@ export interface VariantVariant extends Struct.ComponentSchema {
     displayName: 'Variant item';
   };
   attributes: {
-    description: Schema.Attribute.Text;
-    image: Schema.Attribute.Media<'images' | 'files', true>;
-    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'variant description'>;
+    price: Schema.Attribute.String;
+    title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'variant tiile'>;
   };
 }
 
 export interface VariantgroupsVariantGroups extends Struct.ComponentSchema {
   collectionName: 'components_variantgroups_variant_groups';
   info: {
+    description: '';
     displayName: 'Variant groups';
   };
   attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'variant group'>;
     variant: Schema.Attribute.Component<'variant.variant', true>;
   };
 }
@@ -80,6 +100,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'cmp.cmp': CmpCmp;
+      'delivery-type.delivery-type': DeliveryTypeDeliveryType;
       'menu.menu': MenuMenu;
       'perk.perk': PerkPerk;
       'review.review': ReviewReview;

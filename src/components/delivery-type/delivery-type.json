@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_delivery_type_delivery_types",
+  "info": {
+    "displayName": "deliveryType",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Pickup",
+        "Delivery"
+      ]
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

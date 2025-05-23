@@ -1,13 +1,11 @@
 {
   "collectionName": "components_menu_menus",
   "info": {
-    "displayName": "menu"
+    "displayName": "menu",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "date": {
-      "type": "date"
-    },
     "title": {
       "type": "string"
     },
@@ -15,14 +13,15 @@
       "type": "blocks"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

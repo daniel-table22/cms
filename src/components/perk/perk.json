@@ -1,12 +1,21 @@
 {
   "collectionName": "components_perk_perks",
   "info": {
-    "displayName": "perk"
+    "displayName": "perk",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

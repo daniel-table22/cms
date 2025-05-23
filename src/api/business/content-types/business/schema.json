@@ -4,7 +4,7 @@
   "info": {
     "singularName": "business",
     "pluralName": "businesses",
-    "displayName": "business",
+    "displayName": "partner",
     "description": ""
   },
   "options": {
@@ -60,9 +60,6 @@
       "repeatable": true,
       "component": "menu.menu"
     },
-    "heroSlogan": {
-      "type": "blocks"
-    },
     "heroCarousel": {
       "type": "media",
       "multiple": true,
@@ -73,26 +70,43 @@
         "videos"
       ]
     },
-    "Mainoffer": {
-      "type": "component",
-      "repeatable": true,
-      "component": "variant.variant"
-    },
-    "delivery": {
-      "type": "component",
-      "repeatable": false,
-      "component": "variant.variant"
-    },
-    "Variantgroup": {
+    "variantGroup": {
       "type": "component",
       "repeatable": true,
       "component": "variantgroups.variant-groups"
     },
-    "title": {
-      "type": "string"
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
-    "description": {
-      "type": "blocks"
+    "supportingChefname": {
+      "type": "string",
+      "default": "Chef Jones"
+    },
+    "delivery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "delivery-type.delivery-type"
+    },
+    "membershipPrice": {
+      "type": "string",
+      "default": "$129"
+    },
+    "membershipDate": {
+      "type": "string",
+      "default": "May 25th"
+    },
+    "offeringType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variant.variant"
     }
   }
 }
