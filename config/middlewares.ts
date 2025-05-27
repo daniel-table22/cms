@@ -8,7 +8,7 @@ export default [
       origin: [
         'http://localhost:3000',
         'http://localhost:5173',
-        /^https:\/\/.*\.vercel\.app$/,
+        'https://pdp-ten.vercel.app',
       ],
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
     },
