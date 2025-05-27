@@ -5,7 +5,11 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000', 'http://localhost:5173'], // Added localhost:5173
+      origin: [
+        'http://localhost:3000',
+        'http://localhost:5173',
+        'https://pdp-d56lk6dcl-table22.vercel.app',
+      ],
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
     },
   },
