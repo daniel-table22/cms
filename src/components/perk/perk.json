@@ -8,14 +8,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "icon": {
-      "allowedTypes": [
-        "images",
-        "files"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }

@@ -48,7 +48,6 @@ export interface PerkPerk extends Struct.ComponentSchema {
     displayName: 'perk';
   };
   attributes: {
-    icon: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String;
   };
 }
@@ -89,6 +88,7 @@ export interface VariantgroupsVariantGroups extends Struct.ComponentSchema {
     displayName: 'Variant groups';
   };
   attributes: {
+    description: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'variant group'>;
