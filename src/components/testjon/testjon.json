@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_testjon_testjons",
+  "info": {
+    "displayName": "testjon",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "testjon": {
+      "type": "string"
+    }
+  }
+}

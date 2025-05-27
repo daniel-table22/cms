@@ -66,6 +66,17 @@ export interface ReviewReview extends Struct.ComponentSchema {
   };
 }
 
+export interface TestjonTestjon extends Struct.ComponentSchema {
+  collectionName: 'components_testjon_testjons';
+  info: {
+    displayName: 'testjon';
+    icon: 'bell';
+  };
+  attributes: {
+    testjon: Schema.Attribute.String;
+  };
+}
+
 export interface VariantVariant extends Struct.ComponentSchema {
   collectionName: 'components_variant_variants';
   info: {
@@ -104,6 +115,7 @@ declare module '@strapi/strapi' {
       'menu.menu': MenuMenu;
       'perk.perk': PerkPerk;
       'review.review': ReviewReview;
+      'testjon.testjon': TestjonTestjon;
       'variant.variant': VariantVariant;
       'variantgroups.variant-groups': VariantgroupsVariantGroups;
     }
