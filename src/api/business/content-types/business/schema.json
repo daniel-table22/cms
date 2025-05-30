@@ -29,7 +29,8 @@
       "type": "string"
     },
     "whatYouGetDescription": {
-      "type": "text"
+      "type": "text",
+      "maxLength": 200
     },
     "supportingDescription": {
       "type": "text"
