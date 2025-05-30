@@ -48,6 +48,8 @@ export interface PerkPerk extends Struct.ComponentSchema {
     displayName: 'perk';
   };
   attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
     title: Schema.Attribute.String;
   };
 }
