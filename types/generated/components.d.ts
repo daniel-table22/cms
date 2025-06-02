@@ -62,8 +62,7 @@ export interface ReviewReview extends Struct.ComponentSchema {
     icon: 'heart';
   };
   attributes: {
-    city: Schema.Attribute.String & Schema.Attribute.DefaultTo<'San Francisco'>;
-    date: Schema.Attribute.Date & Schema.Attribute.DefaultTo<'2025-05-08'>;
+    date: Schema.Attribute.String & Schema.Attribute.DefaultTo<'June 25'>;
     description: Schema.Attribute.Text;
   };
 }

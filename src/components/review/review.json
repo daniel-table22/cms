@@ -7,16 +7,12 @@
   },
   "options": {},
   "attributes": {
-    "date": {
-      "type": "date",
-      "default": "2025-05-08"
-    },
-    "city": {
-      "type": "string",
-      "default": "San Francisco"
-    },
     "description": {
       "type": "text"
+    },
+    "date": {
+      "type": "string",
+      "default": "June 25"
     }
   }
 }

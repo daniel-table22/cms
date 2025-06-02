@@ -377,7 +377,7 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
   collectionName: 'businesses';
   info: {
     description: '';
-    displayName: 'partner';
+    displayName: 'Partner';
     pluralName: 'businesses';
     singularName: 'business';
   };
