@@ -38,6 +38,7 @@ export interface MenuMenu extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    menuupload: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String;
   };
 }

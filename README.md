@@ -1,4 +1,4 @@
-# 🚀 Getting started with Strapi 
+# 🚀 Getting started with Strapi  
 
 New change to readme
 
