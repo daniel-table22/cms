@@ -402,8 +402,7 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     membershipDate: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'May 25th'>;
-    membershipDescription: Schema.Attribute.Text &
-      Schema.Attribute.DefaultTo<'Hero description'>;
+    membershipDescription: Schema.Attribute.Text;
     membershipPrice: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'$129'>;
     menus: Schema.Attribute.Component<'menu.menu', true>;

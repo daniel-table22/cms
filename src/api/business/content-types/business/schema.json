@@ -110,8 +110,7 @@
       "component": "variant.variant"
     },
     "membershipDescription": {
-      "type": "text",
-      "default": "Hero description"
+      "type": "text"
     }
   }
 }
