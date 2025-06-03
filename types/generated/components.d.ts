@@ -16,12 +16,13 @@ export interface CmpCmp extends Struct.ComponentSchema {
 export interface DeliveryTypeDeliveryType extends Struct.ComponentSchema {
   collectionName: 'components_delivery_type_delivery_types';
   info: {
+    description: '';
     displayName: 'deliveryType';
     icon: 'car';
   };
   attributes: {
     description: Schema.Attribute.String;
-    type: Schema.Attribute.Enumeration<['Pickup', 'Delivery']>;
+    type: Schema.Attribute.Enumeration<['Pickup', 'Delivery', 'Shipping']>;
   };
 }
 
@@ -88,8 +89,7 @@ export interface VariantVariant extends Struct.ComponentSchema {
     description: Schema.Attribute.Text &
       Schema.Attribute.DefaultTo<'variant description'>;
     price: Schema.Attribute.String;
-    title: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'variant tiile'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -102,8 +102,7 @@ export interface VariantgroupsVariantGroups extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    title: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'variant group'>;
+    title: Schema.Attribute.String;
     variant: Schema.Attribute.Component<'variant.variant', true>;
   };
 }

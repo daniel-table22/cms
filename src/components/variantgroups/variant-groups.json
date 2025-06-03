@@ -12,8 +12,7 @@
       "component": "variant.variant"
     },
     "title": {
-      "type": "string",
-      "default": "variant group"
+      "type": "string"
     },
     "image": {
       "type": "media",
