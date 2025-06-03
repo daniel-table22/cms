@@ -28,9 +28,6 @@
     "whatYouGetTitle": {
       "type": "string"
     },
-    "whatyougetsubheader": {
-      "type": "string"
-    },
     "supportingDescription": {
       "type": "text"
     },
@@ -108,6 +105,9 @@
     },
     "membershipDescription": {
       "type": "text"
+    },
+    "wygsub": {
+      "type": "string"
     }
   }
 }

@@ -422,8 +422,8 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
       'variantgroups.variant-groups',
       true
     >;
-    whatyougetsubheader: Schema.Attribute.String;
     whatYouGetTitle: Schema.Attribute.String;
+    wygsub: Schema.Attribute.String;
   };
 }
 
