@@ -422,10 +422,7 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
       'variantgroups.variant-groups',
       true
     >;
-    whatYouGetDescription: Schema.Attribute.Text &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 200;
-      }>;
+    whatYouGetDescription: Schema.Attribute.String;
     whatYouGetTitle: Schema.Attribute.String;
   };
 }
