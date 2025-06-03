@@ -400,18 +400,16 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    membershipDate: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'May 25th'>;
+    membershipDate: Schema.Attribute.String;
     membershipDescription: Schema.Attribute.Text;
     membershipPrice: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'$129'>;
+      Schema.Attribute.DefaultTo<'129'>;
     menus: Schema.Attribute.Component<'menu.menu', true>;
     offeringType: Schema.Attribute.Component<'variant.variant', true>;
     perks: Schema.Attribute.Component<'perk.perk', true>;
     publishedAt: Schema.Attribute.DateTime;
     reviews: Schema.Attribute.Component<'review.review', true>;
-    supportingChefname: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Chef Jones'>;
+    supportingChefname: Schema.Attribute.String;
     supportingDescription: Schema.Attribute.Text;
     supportingMedia: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',

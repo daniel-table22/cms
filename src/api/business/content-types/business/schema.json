@@ -88,8 +88,7 @@
       ]
     },
     "supportingChefname": {
-      "type": "string",
-      "default": "Chef Jones"
+      "type": "string"
     },
     "delivery": {
       "type": "component",
@@ -98,11 +97,10 @@
     },
     "membershipPrice": {
       "type": "string",
-      "default": "$129"
+      "default": "129"
     },
     "membershipDate": {
-      "type": "string",
-      "default": "May 25th"
+      "type": "string"
     },
     "offeringType": {
       "type": "component",
