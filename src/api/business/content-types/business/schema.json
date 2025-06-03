@@ -28,7 +28,7 @@
     "whatYouGetTitle": {
       "type": "string"
     },
-    "whatYouGetDescription": {
+    "whatyougetsubheader": {
       "type": "string"
     },
     "supportingDescription": {
